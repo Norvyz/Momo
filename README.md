@@ -1,3 +1,4 @@
+<div align="center">
 # Momo 🦎
 <img width="500" height="500" alt="momo" src="https://github.com/user-attachments/assets/27c1103c-1bcb-4095-8f5b-cd70950e6ccb" width="160" height="160" style="display: block; margin: 0 auto"/>
 
@@ -79,3 +80,4 @@ Cualquier modificación o redistribución debe mantenerse bajo la misma licencia
 
 ---
 
+</div>
