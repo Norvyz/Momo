@@ -32,14 +32,14 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 ---
 
 ##  Capturas
-<img width="899" height="528" alt="Momo 4" src="https://github.com/user-attachments/assets/d9a29a49-0553-46a7-babf-ba674656bee9" width="30%" />
-<img width="386" height="363" alt="Momo 6" src="https://github.com/user-attachments/assets/a9f60139-7245-49f3-a95e-76cf7ca50644" width="30%" />
-<img width="911" height="517" alt="Momo 2" src="https://github.com/user-attachments/assets/8cc8f7ae-bebe-4407-83f4-02e4ac2d7657" width="30%" />
-<img width="908" height="536" alt="Momo 3" src="https://github.com/user-attachments/assets/7300abaf-2124-4f0f-bef5-39c0745b97ae" width="30%" />
-<img width="347" height="353" alt="Momo 7" src="https://github.com/user-attachments/assets/c3cfba42-943c-483c-b212-d31cd9f3c106" width="30%" />
-<img width="911" height="554" alt="Momo 5" src="https://github.com/user-attachments/assets/6ca326e4-29a1-464d-9fc8-b23e8105b0e9" width="30%" />
-<img width="364" height="329" alt="Momo 1" src="https://github.com/user-attachments/assets/00939d79-3701-47a1-aacf-8f9314e31df2" width="30%" />
-
+<img src="https://github.com/user-attachments/assets/d9a29a49-0553-46a7-babf-ba674656bee9" width="30%" />
+<img src="https://github.com/user-attachments/assets/a9f60139-7245-49f3-a95e-76cf7ca50644" width="30%" />
+<img src="https://github.com/user-attachments/assets/8cc8f7ae-bebe-4407-83f4-02e4ac2d7657" width="30%" />
+<img src="https://github.com/user-attachments/assets/7300abaf-2124-4f0f-bef5-39c0745b97ae" width="30%" />
+<img src="https://github.com/user-attachments/assets/c3cfba42-943c-483c-b212-d31cd9f3c106" width="30%" />
+<img src="https://github.com/user-attachments/assets/6ca326e4-29a1-464d-9fc8-b23e8105b0e9" width="30%" />
+<img src="https://github.com/user-attachments/assets/00939d79-3701-47a1-aacf-8f9314e31df2" width="30%" />
+</div>
 
 
 ---
