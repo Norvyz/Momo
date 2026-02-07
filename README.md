@@ -1,4 +1,6 @@
 # Momo 🦎
+<img width="500" height="500" alt="momo" src="https://github.com/user-attachments/assets/27c1103c-1bcb-4095-8f5b-cd70950e6ccb" width="160" height="160" style="display: block; margin: 0 auto"/>
+
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -28,36 +30,15 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 ---
 
 ## 🖼️ Capturas
+<img width="899" height="528" alt="Momo 4" src="https://github.com/user-attachments/assets/d9a29a49-0553-46a7-babf-ba674656bee9" />
+<img width="386" height="363" alt="Momo 6" src="https://github.com/user-attachments/assets/a9f60139-7245-49f3-a95e-76cf7ca50644" />
+<img width="911" height="517" alt="Momo 2" src="https://github.com/user-attachments/assets/8cc8f7ae-bebe-4407-83f4-02e4ac2d7657" />
+<img width="908" height="536" alt="Momo 3" src="https://github.com/user-attachments/assets/7300abaf-2124-4f0f-bef5-39c0745b97ae" />
+<img width="347" height="353" alt="Momo 7" src="https://github.com/user-attachments/assets/c3cfba42-943c-483c-b212-d31cd9f3c106" />
+<img width="911" height="554" alt="Momo 5" src="https://github.com/user-attachments/assets/6ca326e4-29a1-464d-9fc8-b23e8105b0e9" />
+<img width="364" height="329" alt="Momo 1" src="https://github.com/user-attachments/assets/00939d79-3701-47a1-aacf-8f9314e31df2" />
 
-## 🖼️ Capturas
 
-<a href="https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e" target="_blank">
-  <img src="[https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e](https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e)" alt="Prueba 1" width="400" style="margin: 4px;" />
-</a>
-
-<a href="https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7" target="_blank">
-  <img src="[https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7](https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7)" alt="Prueba 2" width="400" style="margin: 4px;" />
-</a>
-
-<a href="https://github.com/user-attachments/assets/5dadf945-2662-4f5e-988f-39b3b98b5b6b" target="_blank">
-  <img src="github.com/user-attachments/assets/5dadf945-2662-4f5e-988f-39b3b98b5b6b" alt="Momo 4" width="400" style="margin: 4px;" />
-</a>
-
-<a href="https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e" target="_blank">
-  <img src="[[https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e](https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e)](https://github.com/user-attachments/assets/42be6835-080b-40d5-b606-3dc3f581120a)" alt="Momo 6" width="400" style="margin: 4px;" />
-</a>
-
-<a href="https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7" target="_blank">
-  <img src="[[https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7](https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7)](https://github.com/user-attachments/assets/5a7bf70a-49b5-4cfa-85f8-17b432ec9459)" alt="Momo 5" width="400" style="margin: 4px;" />
-</a>
-
-<a href="https://github.com/user-attachments/assets/5dadf945-2662-4f5e-988f-39b3b98b5b6b" target="_blank">
-  <img src="[github.com/user-attachments/assets/5dadf945-2662-4f5e-988f-39b3b98b5b6b](https://github.com/user-attachments/assets/2932d901-3bef-4331-813a-5009aadd845d)" alt="Momo 4" width="400" style="margin: 4px;" />
-</a>
-
-<a href="https://github.com/user-attachments/assets/5dadf945-2662-4f5e-988f-39b3b98b5b6b" target="_blank">
-  <img src="[[github.com/user-attachments/assets/5dadf945-2662-4f5e-988f-39b3b98b5b6b](https://github.com/user-attachments/assets/2932d901-3bef-4331-813a-5009aadd845d)](https://github.com/user-attachments/assets/f1a7aeb3-bf41-4eca-9ea1-63178872d311)" alt="Momo 4" width="400" style="margin: 4px;" />
-</a>
 
 ---
 
