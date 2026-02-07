@@ -32,16 +32,14 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 ---
 
 ##  Capturas
-<img src="[https://github.com/user-attachments/assets/d9a29a49-0553-46a7-babf-ba674656bee9](https://github.com/user-attachments/assets/0fbb88a1-c6a0-4115-ad76-07f5768a723e)" width="30%" />
-<img src="https://github.com/user-attachments/assets/a9f60139-7245-49f3-a95e-76cf7ca50644" width="30%" />
-<img src="https://github.com/user-attachments/assets/8cc8f7ae-bebe-4407-83f4-02e4ac2d7657" width="30%" />
-<img src="https://github.com/user-attachments/assets/7300abaf-2124-4f0f-bef5-39c0745b97ae" width="30%" />
-<img src="https://github.com/user-attachments/assets/c3cfba42-943c-483c-b212-d31cd9f3c106" width="30%" />
-<img src="https://github.com/user-attachments/assets/6ca326e4-29a1-464d-9fc8-b23e8105b0e9" width="30%" />
-<img src="https://github.com/user-attachments/assets/00939d79-3701-47a1-aacf-8f9314e31df2" width="30%" />
+<img src="https://github.com/user-attachments/assets/0fbb88a1-c6a0-4115-ad76-07f5768a723e" width="30%" />
+<img src="https://github.com/user-attachments/assets/b4ff74cd-a2fc-47bc-8538-7cd96f257428" width="30%" />
+<img src="https://github.com/user-attachments/assets/3ba27882-76b4-4946-be80-d6e8076f29bd" width="30%" />
+<img src="https://github.com/user-attachments/assets/5760c05c-89fc-4b2c-826b-1dbb22a5cdf3" width="30%" />
+<img src="https://github.com/user-attachments/assets/43f81ef5-1710-4c2d-89ed-2f16ce2b2231" width="30%" />
+<img src="https://github.com/user-attachments/assets/1f4d5809-93b8-49e7-873c-831adf498e3f" width="30%" />
+<img src="https://github.com/user-attachments/assets/4dc17fa4-1fc8-4140-bc58-a02c917c9e14" width="30%" />
 </div>
-
-
 
 ---
 
