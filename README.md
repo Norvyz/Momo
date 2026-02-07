@@ -1,10 +1,11 @@
 <div align="center">
-##  Momo
+
 <img width="500" height="500" alt="momo" src="https://github.com/user-attachments/assets/27c1103c-1bcb-4095-8f5b-cd70950e6ccb" width="160" height="160" style="display: block; margin: 0 auto"/>
 
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+##  Momo
 **Tu mascota de escritorio inteligente y open-source.**  
 Momo abre aplicaciones, te acompaña y aprende contigo mientras trabajas en tu PC.
 
