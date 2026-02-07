@@ -29,7 +29,13 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 
 ## 🖼️ Capturas
 
-*(Aquí puedes agregar capturas de Momo o GIFs de interacción con la mascota)*
+<img width="386" height="363" alt="Momo 6" src="https://github.com/user-attachments/assets/88efa14f-49bd-4762-bb30-0f0ba374bd6e" />
+<img width="911" height="554" alt="Momo 5" src="https://github.com/user-attachments/assets/2da763b8-11f9-42d0-84ca-6eb972b01ce7" />
+<img width="912" height="525" alt="Momo 4" src="https://github.com/user-attachments/assets/815410d9-7198-4664-9940-3db4e1513ffb" />
+<img width="911" height="517" alt="Momo 2" src="https://github.com/user-attachments/assets/5a7bf70a-49b5-4cfa-85f8-17b432ec9459" />
+<img width="364" height="329" alt="Momo 1" src="https://github.com/user-attachments/assets/2932d901-3bef-4331-813a-5009aadd845d" />
+<img width="347" height="353" alt="Momo 7" src="https://github.com/user-attachments/assets/f1a7aeb3-bf41-4eca-9ea1-63178872d311" />
+
 
 ---
 
