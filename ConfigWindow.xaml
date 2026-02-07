@@ -1,0 +1,410 @@
+﻿<Window x:Class="Momo.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuración de Momo"
+        Icon="Assets/momo.ico"
+        Width="880"
+        Height="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{DynamicResource WindowBackground}">
+
+    <!-- =========================
+         🎨 RECURSOS PREMIUM
+         ========================= -->
+    <Window.Resources>
+
+        <!-- =========================
+     🌙 TOGGLE SWITCH PREMIUM
+     ========================= -->
+        <Style TargetType="ToggleButton" x:Key="ThemeToggleStyle">
+            <Setter Property="Width" Value="52"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid>
+                            <Border x:Name="Track"
+                            CornerRadius="13"
+                            Background="#DADADA"/>
+                            <Ellipse x:Name="Thumb"
+                             Width="20"
+                             Height="20"
+                             Fill="White"
+                             Margin="3"
+                             HorizontalAlignment="Left"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Track"
+                                Property="Background"
+                                Value="{DynamicResource AccentColor}"/>
+                                <Setter TargetName="Thumb"
+                                Property="HorizontalAlignment"
+                                Value="Right"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+       
+
+        <!-- 🌞 MODO CLARO (DEFAULT) -->
+        <SolidColorBrush x:Key="WindowBackground" Color="#FAFAFA"/>
+        <SolidColorBrush x:Key="PanelBackground" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="BorderColor" Color="#E6E6E6"/>
+
+        <SolidColorBrush x:Key="TextForeground" Color="#1F1F1F"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#6F6F6F"/>
+
+        <SolidColorBrush x:Key="AccentColor" Color="#5B8CFF"/>
+
+        <SolidColorBrush x:Key="ButtonBackground" Color="#F2F2F2"/>
+        <SolidColorBrush x:Key="ButtonHover" Color="#E8E8E8"/>
+
+        <!-- 🔹 Fade in -->
+        <Storyboard x:Key="FadeInStoryboard">
+            <DoubleAnimation From="0"
+                             To="1"
+                             Duration="0:0:0.25"
+                             Storyboard.TargetProperty="Opacity"/>
+        </Storyboard>
+
+        <!-- =========================
+             🔘 BOTÓN PREMIUM
+             ========================= -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+            <Setter Property="Padding" Value="14,6"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background"
+                                        Value="{DynamicResource ButtonHover}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Opacity" Value="0.75"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- =========================
+             ☑ CHECKBOX MODERNO
+             ========================= -->
+        <Style TargetType="CheckBox">
+            <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        
+
+    </Window.Resources>
+
+    <!-- =========================
+         📐 LAYOUT
+         ========================= -->
+    <Grid Margin="14">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- TAB CONTROL -->
+        <TabControl Grid.Row="0"
+                    Opacity="0"
+                    Loaded="TabControl_Loaded"
+                    Background="{DynamicResource PanelBackground}"
+                    BorderThickness="0">
+
+            <!-- 🔧 GENERAL -->
+            <TabItem Header="General">
+                <StackPanel Margin="18"
+                            Background="{DynamicResource PanelBackground}">
+
+                    <TextBlock Text="Nombre de la mascota"
+                               FontWeight="SemiBold"/>
+
+                    <TextBox x:Name="NameBox"
+                             Height="30"
+                             Margin="0,6,0,14"/>
+
+                    <CheckBox x:Name="AutoStartCheck"
+                              Content="Iniciar Momo al prender Windows"
+                              Margin="0,0,0,16"/>
+
+                    <Separator Margin="0,8"/>
+
+                    <TextBlock Text="Interacción por voz"
+                               FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+
+                    <CheckBox x:Name="VoiceEnabledCheckBox"
+                              Content="Permitir que Momo escuche mi micrófono"
+                              Checked="VoiceEnabledCheckBox_Checked"
+                              Unchecked="VoiceEnabledCheckBox_Unchecked"/>
+
+                    <TextBlock Text="Momo solo reaccionará cuando digas su nombre."
+                               TextWrapping="Wrap"
+                               Foreground="{DynamicResource TextSecondary}"
+                               FontSize="12"
+                               Margin="22,4,0,8"/>
+
+                    <StackPanel Margin="22,0,0,0">
+                        <TextBlock Text="Seleccionar micrófono"
+                                   FontSize="12"
+                                   Foreground="{DynamicResource TextSecondary}"/>
+                        <ComboBox x:Name="MicrophoneComboBox"
+                                  Height="26"
+                                  Width="260"
+                                  IsEnabled="False"
+                                  SelectionChanged="MicrophoneComboBox_SelectionChanged"/>
+                    </StackPanel>
+
+                    <Separator Margin="0,14"/>
+
+                    <!-- 🌙 MODO OSCURO -->
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                Margin="0,6,0,0">
+                        <TextBlock Text="Modo oscuro"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,12,0"/>
+                        <ToggleButton x:Name="ThemeToggle"
+                                      Style="{StaticResource ThemeToggleStyle}"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </TabItem>
+
+            <!-- 🚀 APLICACIONES -->
+            <TabItem Header="Aplicaciones">
+                <Grid Margin="10" Background="{DynamicResource PanelBackground}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <ListView x:Name="AppsList"
+                              SelectionChanged="AppsList_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Keyword"
+                                                Width="120"
+                                                DisplayMemberBinding="{Binding Keyword}"/>
+                                <GridViewColumn Header="Ruta"
+                                                Width="260"
+                                                DisplayMemberBinding="{Binding ExecutablePath}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <StackPanel Grid.Row="1"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,12,0,0">
+                        <Button Content="➕ Agregar"
+                                Width="100"
+                                Margin="0,0,8,0"
+                                Click="AddApp_Click"/>
+                        <Button Content="✏ Editar"
+                                Width="90"
+                                Margin="0,0,8,0"
+                                Click="EditApp_Click"/>
+                        <Button Content="🗑 Eliminar"
+                                Width="90"
+                                Click="RemoveApp_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <!-- 📦 GRUPOS / PACKS -->
+            <TabItem Header="Grupos">
+                <Grid Margin="10" Background="{DynamicResource PanelBackground}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- PANEL IZQUIERDO -->
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="Grupos"
+                                   FontSize="16"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,8"
+                                   Foreground="{DynamicResource TextForeground}"/>
+                        <ListView x:Name="PacksList"
+                                  Grid.Row="1"
+                                  SelectionChanged="PacksList_SelectionChanged">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Nombre"
+                                                    Width="120"
+                                                    DisplayMemberBinding="{Binding Name}"/>
+                                    <GridViewColumn Header="Apps"
+                                                    Width="50"
+                                                    DisplayMemberBinding="{Binding Apps.Count}"/>
+                                    <GridViewColumn Header="Delay"
+                                                    Width="50"
+                                                    DisplayMemberBinding="{Binding DelaySeconds}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+
+                        <StackPanel Grid.Row="2"
+                                    Orientation="Horizontal"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,10,0,0">
+                            <Button Content="➕ Crear"
+                                    Width="80"
+                                    Margin="0,0,5,0"
+                                    Click="AddPack_Click"/>
+                            <Button Content="✏ Editar"
+                                    Width="80"
+                                    Margin="0,0,5,0"
+                                    Click="EditPack_Click"/>
+                            <Button Content="🗑 Eliminar"
+                                    Width="80"
+                                    Click="RemovePack_Click"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- PANEL DERECHO -->
+                    <Grid Grid.Column="1" Margin="10,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="Apps del grupo seleccionado"
+                                   FontSize="16"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,8"
+                                   Foreground="{DynamicResource TextForeground}"/>
+                        <ListView x:Name="PackAppsList"
+                                  Grid.Row="1"/>
+                        <StackPanel Grid.Row="2"
+                                    Orientation="Horizontal"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,10,0,0">
+                            <Button Content="➕ Agregar app"
+                                    Width="120"
+                                    Margin="0,0,5,0"
+                                    Click="AddPackApp_Click"/>
+                            <Button Content="🗑 Quitar"
+                                    Width="80"
+                                    Click="RemovePackApp_Click"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <!-- 🎨 SKIN -->
+            <TabItem Header="Skin">
+                <StackPanel Margin="14" Background="{DynamicResource PanelBackground}">
+                    <Image x:Name="PreviewImage"
+                           Height="130"
+                           Stretch="Uniform"
+                           Margin="0,0,0,12"/>
+                    <Button Content="Cambiar skin"
+                            Height="30"
+                            Width="140"
+                            Click="ChangeSkin_Click"/>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Acerca de">
+                <ScrollViewer Margin="14" Background="{DynamicResource PanelBackground}" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <!-- Título principal -->
+                        <TextBlock Text="Momo 🦎"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Foreground="{DynamicResource TextForeground}"/>
+
+                        <!-- Subtítulo -->
+                        <TextBlock Text="Tu mascota de escritorio inteligente"
+                       Margin="0,6,0,0"
+                       FontStyle="Italic"
+                       Foreground="{DynamicResource TextForeground}"/>
+
+                        <Separator Margin="0,12,0,12"/>
+
+                        <!-- Descripción detallada -->
+                        <TextBlock TextWrapping="Wrap"
+                       Foreground="{DynamicResource TextSecondary}">
+                Momo es un asistente virtual pensado para acompañarte mientras trabajas o estudias en tu PC. 
+                Aprende de tus hábitos, te ayuda a abrir aplicaciones y te ofrece una experiencia interactiva 
+                personalizada. Este proyecto busca combinar utilidad, diversión y aprendizaje en un solo lugar.
+                        </TextBlock>
+
+                        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Foreground="{DynamicResource TextSecondary}">
+                Nació como un proyecto open-source con la idea de acercar la inteligencia artificial y la 
+                personalización a tu escritorio, manteniendo la simplicidad y la ligereza en cada interacción.
+                        </TextBlock>
+
+                        <!-- Links de Comunidad y GitHub -->
+                        <Separator Margin="0,12,0,12"/>
+                        <TextBlock Text="¡Conéctate con la comunidad!" FontWeight="SemiBold" Foreground="{DynamicResource TextForeground}" Margin="0,0,0,4"/>
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,8">
+                            <TextBlock Foreground="DodgerBlue" Cursor="Hand" TextDecorations="Underline" 
+                           MouseLeftButtonUp="GitHubLink_Click">
+                    🔗 Visita nuestro GitHub
+                            </TextBlock>
+                            <TextBlock Foreground="DodgerBlue" Cursor="Hand" TextDecorations="Underline"
+                           MouseLeftButtonUp="DiscordLink_Click">
+                    💬 Únete a nuestro Discord
+                            </TextBlock>
+                        </StackPanel>
+
+                        <Separator Margin="0,12,0,12"/>
+
+                        <!-- Cierre inspirador -->
+                        <TextBlock TextWrapping="Wrap"
+                       Foreground="{DynamicResource TextSecondary}">
+                Gracias por formar parte de la familia Momo. Cada sugerencia, idea o reporte de error nos ayuda a crecer y mejorar.
+                        </TextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+
+        </TabControl>
+
+        <!-- BOTONES -->
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,14,0,0">
+            <Button Content="Cancelar"
+                    Width="110"
+                    Margin="0,0,10,0"
+                    Click="Cancel_Click"/>
+            <Button Content="Guardar"
+                    Width="110"
+                    Click="Save_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
