@@ -1,5 +1,5 @@
 <div align="center">
-# Momo 🦎
+##  Momo
 <img width="500" height="500" alt="momo" src="https://github.com/user-attachments/assets/27c1103c-1bcb-4095-8f5b-cd70950e6ccb" width="160" height="160" style="display: block; margin: 0 auto"/>
 
 
@@ -10,7 +10,7 @@ Momo abre aplicaciones, te acompaña y aprende contigo mientras trabajas en tu P
 
 ---
 
-## 🔹 Acerca de esta versión
+##  Acerca de esta versión
 
 Esta versión **1.0 de Momo** es **portable**, creada en **WPF .NET 8.0**.  
 Debido a las limitaciones actuales de empaquetado en MSIX / Installer Projects, la funcionalidad de **AutoRun con Windows** se maneja desde la propia aplicación y no mediante un instalador.  
@@ -18,9 +18,9 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 
 ---
 
-## ✨ Características principales
+##  Características principales
 
-- Mascota de escritorio interactiva 🦎  
+- Mascota de escritorio interactiva 
 - Abre aplicaciones mediante palabras clave  
 - Grupos de aplicaciones (“packs”) con delay configurables  
 - Cambio de skin / imagen de Momo  
@@ -30,7 +30,7 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 
 ---
 
-## 🖼️ Capturas
+##  Capturas
 <img width="899" height="528" alt="Momo 4" src="https://github.com/user-attachments/assets/d9a29a49-0553-46a7-babf-ba674656bee9" />
 <img width="386" height="363" alt="Momo 6" src="https://github.com/user-attachments/assets/a9f60139-7245-49f3-a95e-76cf7ca50644" />
 <img width="911" height="517" alt="Momo 2" src="https://github.com/user-attachments/assets/8cc8f7ae-bebe-4407-83f4-02e4ac2d7657" />
@@ -43,7 +43,7 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 
 ---
 
-## ⚡ Instalación / Uso
+##  Instalación / Uso
 
 1. Descarga la carpeta publicada desde [Releases](#) (archivo `.zip`).  
 2. Extrae la carpeta donde quieras (por ejemplo `C:\Users\TuUsuario\Apps\Momo\`).  
