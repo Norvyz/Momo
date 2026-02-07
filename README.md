@@ -11,6 +11,15 @@ Momo abre aplicaciones, te acompaña y aprende contigo mientras trabajas en tu P
 
 ---
 
+## 📦 Descargas
+
+ **Versión estable (v1.0):**  
+https://github.com/Norvyz/Momo/releases/tag/1.0
+
+ **Código fuente:**  
+https://github.com/Norvyz/Momo
+
+
 ##  Acerca de esta versión
 
 Esta versión **1.0 de Momo** es **portable**, creada en **WPF .NET 8.0**.  
