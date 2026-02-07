@@ -58,8 +58,8 @@ Esto asegura que Momo pueda ejecutarse sin problemas, pero requiere que se ejecu
 
 ## 🔗 Links útiles
 
-- **GitHub:** [https://github.com/tuusuario/momo](https://github.com/Norvyz/Momo)
-- **Discord:** [https://discord.gg/tuServidorDiscord](https://discord.gg/Qa5X9HQZ5x)  
+- **GitHub:** [https://github.com/Norvyz/Momo](https://github.com/Norvyz/Momo)
+- **Discord:** [https://discord.gg/Momo Oficial](https://discord.gg/Qa5X9HQZ5x)  
 
 ---
 
