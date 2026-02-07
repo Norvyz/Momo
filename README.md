@@ -9,7 +9,6 @@
 **Tu mascota de escritorio inteligente y open-source.**  
 Momo abre aplicaciones, te acompaña y aprende contigo mientras trabajas en tu PC.
 
----
 
 ## 📦 Descargas
 
@@ -19,6 +18,7 @@ https://github.com/Norvyz/Momo/releases/tag/1.0
  **Código fuente:**  
 https://github.com/Norvyz/Momo
 
+---
 
 ##  Acerca de esta versión
 
